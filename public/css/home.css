@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/*Aqui va lo correspondiente al Header*/
+
+header {
+    background-color: #EAC926;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+.logoYBuscador {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscador {
+    width: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+
+.buscador i {
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    color: #666;
+}
+
+.buscador input {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    /* Eliminar las viñetas de la lista */
+    margin-left: 0px;
+    padding-left: 0px;
+    display: none;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    width: 40px;
+    /* Define el ancho deseado para el menú hamburguesa */
+    height: 40px;
+    /* Define la altura deseada para el menú hamburguesa */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin: 0 auto;
+    /* Centra horizontalmente con margen automático */
+    border-radius: 3px;
+    /* Radio de las esquinas para redondearlas */
+}
+
+.burger-menu i {
+    font-size: 24px;
+    /* Define el tamaño de las barras blancas */
+    color: white;
+    /* Establece el color de las barras en blanco */
+}
+
+.banner {
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente al main*/
+
+main {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    background-color: #ebebeb;
+}
+
+.producto {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.product {
+    width: 150px;
+}
+
+.detalle {
+    border-top: 1px solid #ebebeb;
+    padding-left: 15px;
+    padding-left: 15px;
+    text-align: left;
+    line-height: 0;
+    position: relative;
+}
+
+.detalle i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.detalle .descripcion {
+    color: #666;
+    display: none;
+}
+
+.precioYDescuento {
+    display: flex;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente al footer*/
+
+footer {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.iconoFooter {
+    color: #1259c3;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente a las fuentes*/
+
+.cdt {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+
+}
+
+.titular {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px
+}
+
+.precio {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    width: 30%;
+
+}
+
+.descuento {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+
+}
+
+.descripcion {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente a las media queries*/
+
+/* Navegación en tablet*/
+@media(min-width:361px) {
+
+    .detalle .descripcion {
+        display: inline;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: calc(50% - 10px);
+        /* 50% del ancho de la pantalla menos 10px de margen derecho */
+        margin-right: 10px;
+    }
+
+    ul {
+        display: inline;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .seccion {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .logo {
+        width: 40%;
+    }
+
+    .buscador {
+        width: 50%;
+        padding-left: 10px;
+
+    }
+
+    .buscador input {
+        font-size: 12px;
+        /* Tamaño de fuente más pequeño */
+        padding: 5px;
+        /* Espaciado interno más pequeño */
+    }
+
+    .compra {
+        display: flex;
+        font-size: 12px;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        /* Coloca los elementos al principio y al final */
+        align-items: center;
+        /* Centra verticalmente los elementos */
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .loginBar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        /* Espacio entre elementos de la lista */
+    }
+
+}
+
+/* Navegación en desktop*/
+@media(min-width:769px) {
+
+    .detalle .descripcion {
+        display: none;
+    }
+
+    .producto:hover .detalle .descripcion {
+        display: block;
+    }
+
+
+
+    .producto {
+        box-shadow: none;
+        width: 25%;
+        width: calc(25% - 10px);
+        /* 25% del ancho de la pantalla menos 10px de margen derecho */
+        margin-right: 10px;
+    }
+
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+        display: inline;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+    .detalle i {
+        transition: transform 0.3s ease;
+        /* Agrega una transición para que la rotación sea suave */
+    }
+
+    .detalle i:hover {
+        transform: rotate(-90deg);
+        /* Aplica una rotación de -90 grados al pasar el mouse por encima */
+    }
+
+    .pieDePagina {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    footer .cdt {
+        display: flex;
+    }
+
+    .iconoFooter:hover {
+        color: #EAC926;
+
+    }
+
+}

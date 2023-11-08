@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/*Aqui va lo correspondiente al Header*/
+
+header {
+    background-color: #EAC926;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+.logoYBuscador {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscador {
+    width: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+
+.buscador i {
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    color: #666;
+}
+
+.buscador input {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    /* Eliminar las viñetas de la lista */
+    margin-left: 0px;
+    padding-left: 0px;
+    display: none;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    width: 40px;
+    /* Define el ancho deseado para el menú hamburguesa */
+    height: 40px;
+    /* Define la altura deseada para el menú hamburguesa */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin: 0 auto;
+    /* Centra horizontalmente con margen automático */
+    border-radius: 3px;
+    /* Radio de las esquinas para redondearlas */
+}
+
+.burger-menu i {
+    font-size: 24px;
+    /* Define el tamaño de las barras blancas */
+    color: white;
+    /* Establece el color de las barras en blanco */
+}
+
+.banner {
+    width: 100%;
+}
+
+
+
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    background-color: #ebebeb;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+
+    margin-bottom: 17px;
+
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+
+}
+
+/* Hide the placeholder texts (a) */
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #ebebeb;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+
+.botones {
+    text-align: center;
+}
+
+.botonenviar,
+.botonborrar {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.botonenviar:hover {
+    background-color: #0022AA;
+    transform: translateY(-2px);
+}
+
+.botonborrar:hover {
+    background-color: #4752f0;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: blue;
+}
+
+.input:focus {
+    border: 2px solid blue;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+.perfilDeUsuario label {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*Aqui va lo correspondiente al footer*/
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.iconoFooter {
+    color: #1259c3;
+    font-size: 30px;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente a las fuentes*/
+
+.cdt {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+
+}
+
+.titular {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px
+}
+
+
+
+/*-------------------------------------------------------------------*/
+
+/*Aqui va lo correspondiente a las media queries*/
+
+/* Navegación en tablet*/
+@media(min-width:361px) {
+
+    ul {
+        display: inline;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+    .header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .logo {
+        width: 40%;
+    }
+
+    .buscador {
+        width: 50%;
+        padding-left: 10px;
+
+    }
+
+    .buscador input {
+        font-size: 12px;
+        /* Tamaño de fuente más pequeño */
+        padding: 5px;
+        /* Espaciado interno más pequeño */
+    }
+
+    .compra {
+        display: flex;
+        font-size: 12px;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        /* Coloca los elementos al principio y al final */
+        align-items: center;
+        /* Centra verticalmente los elementos */
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .loginBar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        /* Espacio entre elementos de la lista */
+    }
+
+}
+
+/* Navegación en desktop*/
+@media(min-width:769px) {
+
+
+
+    ul {
+        display: inline;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .detalle i {
+        transition: transform 0.3s ease;
+        /* Agrega una transición para que la rotación sea suave */
+    }
+
+    .detalle i:hover {
+        transform: rotate(-90deg);
+        /* Aplica una rotación de -90 grados al pasar el mouse por encima */
+    }
+
+    .pieDePagina {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    footer .cdt {
+        display: flex;
+    }
+
+    .iconoFooter:hover {
+        color: #EAC926;
+
+    }
+
+}
